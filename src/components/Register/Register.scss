@@ -1,0 +1,20 @@
+.register-form{
+    display: flex;
+    justify-content: center;
+   
+
+    form{
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+}
+input{
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+   
+}

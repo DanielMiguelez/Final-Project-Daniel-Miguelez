@@ -1,4 +1,5 @@
 import React from "react";
+import './Register.scss'
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { register } from "../../features/auth/authSlice";
@@ -41,7 +42,9 @@ const Register = () => {
   };
 
   return (
+    <div className="register-form">
     <form onSubmit={onSubmit}>
+    <h3>Register Form</h3>
       <input
         type="text"
         name="name"
@@ -79,6 +82,7 @@ const Register = () => {
       />
       <button type="submit">Register</button>
     </form>
+    </div>
   );
 };
 

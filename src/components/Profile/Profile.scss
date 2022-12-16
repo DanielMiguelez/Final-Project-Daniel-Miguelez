@@ -1,5 +1,10 @@
 .userfield{
     border: 1px solid rgb(131, 108, 108);
     background-color: orange;
-   
+}
+.profilediv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
 }

@@ -9,11 +9,12 @@ const Header = () => {
   const navigate = useNavigate()
   const {user} = useSelector (state => state.auth)
   const [text, setText] = useState("")
+
   
   const handleChange = (e) => {
     setText(e.target.value);
     if (e.key === "Enter"){
-      console.log(text);
+      navigate("/search/"+text)
     }
   };
   const onLogout = () =>{

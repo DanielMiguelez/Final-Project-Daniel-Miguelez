@@ -8,7 +8,7 @@ const Profile = () => {
       return <p>cargando</p>
     }
   return (
-    <div>
+    <div className='profilediv'>
     <h1>Profile</h1>
     <div className='userfield'>
     <p>{user.user.name}</p>

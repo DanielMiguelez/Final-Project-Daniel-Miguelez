@@ -16,6 +16,7 @@ const Posts = () => {
     <div>
       <h1>Posts</h1>
       <Post/>
+      
     </div>
   )
 }

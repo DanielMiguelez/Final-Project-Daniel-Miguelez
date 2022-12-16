@@ -1,7 +1,5 @@
 import axios from "axios";
 
-
-
 const API_URL = "http://localhost:3001";
 
 const getAllPosts = async () => {
@@ -17,12 +15,25 @@ const getPostByName = async (name) => {
   return res.data;
 };
 
+const deletePostById = async (id) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const res = await axios.delete(API_URL + "/posts/deletePost/" + id,
+  {
+    headers: {
+      authorization: user?.token,
+    },
+  }
+  );
+  return res.data;
+}
+
 
 
 const postsService = {
   getAllPosts,
   getPostById,
-  getPostByName
+  getPostByName,
+  deletePostById
 };
 
 export default postsService;

@@ -15,6 +15,18 @@ const getPostByName = async (name) => {
   return res.data;
 };
 
+const createPost = async (postData) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const res = await axios.post(API_URL + "/posts/createPost", postData ,
+  {
+    headers: {
+      authorization: user?.token,
+    },
+  });
+  
+  return res.data;
+};
+
 const deletePostById = async (id) => {
   const user = JSON.parse(localStorage.getItem("user"));
   const res = await axios.delete(API_URL + "/posts/deletePost/" + id,
@@ -33,7 +45,8 @@ const postsService = {
   getAllPosts,
   getPostById,
   getPostByName,
-  deletePostById
+  deletePostById,
+  createPost
 };
 
 export default postsService;

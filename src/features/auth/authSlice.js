@@ -70,9 +70,9 @@ export const authSlice = createSlice({
       })
       .addCase(register.rejected, (state, action) => {
         state.isError = true;
-
         state.message = action.payload;
       });
+      
   },
 });
 

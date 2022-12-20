@@ -62,9 +62,9 @@ export const like = createAsyncThunk("posts/likes", async (_id) => {
     console.error(error);
   }
 });
-export const deleteLike = createAsyncThunk("posts/deleteLike", async (_id) => {
+export const dislike = createAsyncThunk("posts/deleteLike", async (_id) => {
   try {
-    return await postsService.deleteLike(_id);
+    return await postsService.dislike(_id);
   } catch (error) {
     console.error(error);
   }
@@ -98,13 +98,24 @@ export const postSlice = createSlice({
       .addCase(like.fulfilled, (state, action) => {
         const posts = state.posts.map((post) => {
           console.log(typeof action.payload._id)
-          if (post._id == action.payload._id) {
+          if (post._id === action.payload._id) {
             post = action.payload;
           }
           return post;
         });
         state.posts = posts  ;
       })
+      .addCase(dislike.fulfilled, (state, action) => {
+        const posts = state.posts.map((post) => {
+          console.log(typeof action.payload._id)
+          if (post._id === action.payload._id) {
+            post = action.payload;
+          }
+          return post;
+        });
+        state.posts = posts  ;
+      })
+      
      
   },
 });

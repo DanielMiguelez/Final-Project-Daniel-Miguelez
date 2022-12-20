@@ -51,6 +51,21 @@ const like = async (_id) => {
  
   return res.data;
 };
+const dislike = async (_id) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const res = await axios.put(
+    API_URL + "/posts/deleteLike/" + _id,
+    {},
+    {
+      headers: {
+        authorization: user?.token,
+      },
+    }
+  );
+ 
+  return res.data;
+};
+
 
 const postsService = {
   getAllPosts,
@@ -59,6 +74,7 @@ const postsService = {
   deletePostById,
   createPost,
   like,
+  dislike
   
 };
 

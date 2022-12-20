@@ -21,6 +21,7 @@ const Post = () => {
   const post = posts?.map((post) => {
   const isAlreadyLiked = post.likes?.includes(user?.user._id);
 
+
     return (
       <div key={post._id} className="postdiv">
         <Link to={"/post/" + post._id}>

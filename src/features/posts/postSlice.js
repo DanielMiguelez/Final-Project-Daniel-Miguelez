@@ -115,6 +115,17 @@ export const postSlice = createSlice({
         });
         state.posts = posts  ;
       })
+      .addCase(deletePostById.fulfilled, (state, action) => {
+        const posts = state.posts.map((post) => {
+          console.log(typeof action.payload._id)
+          if (post._id === action.payload._id) {
+            post = action.payload;
+          }
+          return post;
+        });
+        state.posts = posts  ;
+      })
+      
       
      
   },

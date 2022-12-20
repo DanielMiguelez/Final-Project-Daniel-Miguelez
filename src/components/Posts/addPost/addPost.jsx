@@ -16,10 +16,7 @@ const AddPost = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  useEffect(() => {
-    navigate("/posts")
-   
-  }, [])
+
   
   const onChange = (e) => {
     setFormData((prevState) => ({

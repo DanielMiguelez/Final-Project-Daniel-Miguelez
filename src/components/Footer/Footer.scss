@@ -1,5 +1,20 @@
 .footerdiv{
+    border-top: gold 3px solid;
+    display: flex;
     background-color: rgb(216, 194, 194);
-    height: 5vh;
+    height: 150px;
+    width: 100%;
     align-self: flex-end;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 23%;
+h5{
+    margin: 5px;
+}
+span{
+    margin: 5px;
+}
 }

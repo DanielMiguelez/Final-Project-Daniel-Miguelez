@@ -1,14 +1,14 @@
 .register-form{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
    
 
     form{
-        margin-top: 8vh;
+        margin: 8vh;
         display: flex;
         flex-direction: column;
         width: 50%;
-        border: 1px solid black;
         padding: 20px;
     }
 }

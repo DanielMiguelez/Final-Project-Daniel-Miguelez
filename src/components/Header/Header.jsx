@@ -3,6 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../../features/auth/authSlice'
 import "./Header.scss";
+import {
+  HomeOutlined,
+  TeamOutlined,
+  UsergroupDeleteOutlined,
+  UserAddOutlined,
+  UserOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -26,20 +34,20 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <span><Link to="/">Home</Link></span>
+      <span><Link to="/"><HomeOutlined /> Home</Link></span>
        <input onKeyUp={handleChange} placeholder="search post" name='text'/>
-       {user?.user?.role === 'admin' ? <span><Link to="/admin">Admin</Link></span>:''}
+       {user?.user?.role === 'admin' ? <span><Link to="/admin"> <UserOutlined /> Admin</Link></span>:''}
       {user ? (
         <>
-        <Link to="/profile">Profile</Link>
-        <Link to="/" onClick={onLogout}>Logout</Link>
+        <Link to="/profile"> <TeamOutlined /> Profile</Link>
+        <Link to="/" onClick={onLogout}><UsergroupDeleteOutlined /> Logout</Link>
         </>
 
       ) : (
 
         <>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        <Link to="/login"> Login</Link>
+        <Link to="/register"> <UserAddOutlined /> Register</Link>
         </>
       )}
     </div>

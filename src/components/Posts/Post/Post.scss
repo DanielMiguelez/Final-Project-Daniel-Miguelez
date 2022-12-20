@@ -1,13 +1,17 @@
 .postpadre{
     display: flex;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .postdiv{
     border: 4px solid black;
     margin: 3px;
-    width: 50%;
-
+    width: 35%;
+}
+.likeButton{
+    background-color: green;
 }

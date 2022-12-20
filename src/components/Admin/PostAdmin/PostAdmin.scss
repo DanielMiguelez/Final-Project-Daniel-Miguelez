@@ -1,0 +1,13 @@
+.PostAdminDiv{
+    margin:10px ;
+    width: 50vh;
+    background-color: rgb(182, 154, 154);
+    padding: 10px;
+    border: 1px solid rgb(168, 159, 159);
+    border-radius: 10px;
+    box-shadow: 4px 4px rgb(158, 156, 154);
+    transition: transform 1s;
+    
+}
+.PostAdminDiv:hover {
+    transform: scale(1.05);}

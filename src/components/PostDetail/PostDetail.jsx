@@ -15,6 +15,7 @@ const PostDetail = () => {
     
   return (
     <div>PostDetail
+      <p> {post.userId}</p>
       <p> User: {post.name}</p>
       <p> Info Post:  {post.body}</p>
      

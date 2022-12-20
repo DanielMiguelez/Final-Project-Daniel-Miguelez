@@ -93,8 +93,10 @@ const Register = () => {
           onChange={onChange}
           placeholder="age"
         />
-        <button type="submit">Register</button>
+         <button type="submit">Register</button>
       </form>
+
+     
     </div>
   );
 };

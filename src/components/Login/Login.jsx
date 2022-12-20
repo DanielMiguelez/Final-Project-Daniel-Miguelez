@@ -62,6 +62,9 @@ const Login = () => {
         placeholder="password"
       />
       <button type="submit">Login</button>
+      <hr />
+      <p>Or Login with Facebook</p>
+      <a href="#">Forgot password?</a>
     </form>
     </div>
   );

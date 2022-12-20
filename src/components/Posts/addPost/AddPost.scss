@@ -1,0 +1,17 @@
+.padreCreatePost{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.postForm:hover {
+    transform: scale(1.05);}
+
+.postForm{
+    background-color: gray;
+    height: 180px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    transition: transform 1s;
+}

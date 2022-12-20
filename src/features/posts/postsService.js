@@ -17,36 +17,49 @@ const getPostByName = async (name) => {
 
 const createPost = async (postData) => {
   const user = JSON.parse(localStorage.getItem("user"));
-  const res = await axios.post(API_URL + "/posts/createPost", postData ,
-  {
+  const res = await axios.post(API_URL + "/posts/createPost", postData, {
     headers: {
       authorization: user?.token,
     },
   });
-  
+
   return res.data;
 };
 
 const deletePostById = async (id) => {
   const user = JSON.parse(localStorage.getItem("user"));
-  const res = await axios.delete(API_URL + "/posts/deletePost/" + id,
-  {
+  const res = await axios.delete(API_URL + "/posts/deletePost/" + id, {
     headers: {
       authorization: user?.token,
     },
-  }
-  );
+  });
   return res.data;
-}
+};
 
+const like = async (_id) => {
+  const user = JSON.parse(localStorage.getItem("user"));
 
+  const res = await axios.put(
+    API_URL + "/posts/likes/" + _id,
+    {},
+    {
+      headers: {
+        authorization: user?.token,
+      },
+    }
+  );
+ 
+  return res.data;
+};
 
 const postsService = {
   getAllPosts,
   getPostById,
   getPostByName,
   deletePostById,
-  createPost
+  createPost,
+  like,
+  
 };
 
 export default postsService;

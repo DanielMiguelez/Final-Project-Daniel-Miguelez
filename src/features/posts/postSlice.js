@@ -78,8 +78,7 @@ export const getPostsById = createAsyncThunk("books/getPostsById", async (_id) =
   }
 });
 
-export const updatePost = createAsyncThunk("books/updatePost", async (post) => {
-  console.log(post)
+export const updatePost = createAsyncThunk("posts/updatePost/", async (post) => {
   try {
     return await postsService.updatePost(post);
   } catch (error) {

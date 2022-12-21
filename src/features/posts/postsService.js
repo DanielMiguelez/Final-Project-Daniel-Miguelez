@@ -66,10 +66,14 @@ const dislike = async (_id) => {
   return res.data;
 };
 const updatePost = async (post) => {
-  const res = await axios.put(API_URL + "/books/updatePost"+ post._id, post);
+  const user = JSON.parse(localStorage.getItem("user")); 
+  const res = await axios.put(API_URL + "/posts/updatePost/" + post._id, post,  {
+      headers: {
+          authorization: user?.token,
+      },
+  });
   return res.data;
-};
-
+}
 
 
 

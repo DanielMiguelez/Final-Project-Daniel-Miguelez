@@ -70,6 +70,24 @@ export const dislike = createAsyncThunk("posts/deleteLike", async (_id) => {
   }
 });
 
+export const getPostsById = createAsyncThunk("books/getPostsById", async (_id) => {
+  try {
+    return await postsService.getPostById(_id);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+export const updatePost = createAsyncThunk("books/updatePost", async (post) => {
+  console.log(post)
+  try {
+    return await postsService.updatePost(post);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+
 export const postSlice = createSlice({
   name: "posts",
   initialState,
@@ -97,37 +115,44 @@ export const postSlice = createSlice({
       })
       .addCase(like.fulfilled, (state, action) => {
         const posts = state.posts.map((post) => {
-          console.log(typeof action.payload._id)
+          console.log(typeof action.payload._id);
           if (post._id === action.payload._id) {
             post = action.payload;
           }
           return post;
         });
-        state.posts = posts  ;
+        state.posts = posts;
       })
       .addCase(dislike.fulfilled, (state, action) => {
         const posts = state.posts.map((post) => {
-          console.log(typeof action.payload._id)
+          console.log(typeof action.payload._id);
           if (post._id === action.payload._id) {
             post = action.payload;
           }
           return post;
         });
-        state.posts = posts  ;
+        state.posts = posts;
       })
       .addCase(deletePostById.fulfilled, (state, action) => {
         const posts = state.posts.map((post) => {
-          console.log(typeof action.payload._id)
+          console.log(typeof action.payload._id);
           if (post._id === action.payload._id) {
             post = action.payload;
           }
           return post;
         });
-        state.posts = posts  ;
+        state.posts = posts;
       })
-      
-      
-     
+      .addCase(updatePost.fulfilled, (state, action) => {
+        const posts = state.posts.map((post) => {
+          if (post._id === action.payload.post._id) {
+            post = action.payload.post;
+          }
+          return post;
+        });
+        state.posts = posts;
+      });
+
   },
 });
 

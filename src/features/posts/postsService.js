@@ -65,6 +65,11 @@ const dislike = async (_id) => {
  
   return res.data;
 };
+const updatePost = async (post) => {
+  const res = await axios.put(API_URL + "/books/updatePost"+ post._id, post);
+  return res.data;
+};
+
 
 
 
@@ -75,7 +80,8 @@ const postsService = {
   deletePostById,
   createPost,
   like,
-  dislike
+  dislike,
+  updatePost
   
 };
 

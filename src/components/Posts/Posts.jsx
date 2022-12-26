@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { getAllPosts, reset } from "../../features/posts/postSlice";
 import AddPost from "./AddPost/AddPost";
 import Post from "./Post/Post";
+import "./Posts.scss";
 
 const Posts = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,9 @@ const Posts = () => {
         <AddPost />
       </h4>
       <h1>Posts</h1>
+      <div className="posts">
       <Post />
+      </div>
     </div>
   );
 };

@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { deletePostById, getPostById } from "../../features/posts/postSlice";
-import { Button, Modal, Result } from "antd";
+import {  Modal, Result } from "antd";
 import { useState } from "react";
+import "./PostDetail.scss";
 
 const PostDetail = () => {
   const { id } = useParams();

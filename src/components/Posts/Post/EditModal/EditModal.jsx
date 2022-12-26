@@ -22,15 +22,15 @@ const EditModal = ({ visible, setVisible }) => {
   }, [post]);
 
   return (
-    <Modal  className="formodal" title="Edit Post" visible={visible} footer={[]}>
-     <Form  onFinish={onFinish} form={form}>
-
+    <Modal forceRender title="Edit Post" visible={visible} footer={[]}>
+    
+     <Form className="form-container"  onFinish={onFinish} form={form}>
         <Form.Item label="Post Name" name="name">
           <Input placeholder="Post name" />
         </Form.Item>
 
         <Form.Item label="Body">
-          <Form.Item name="body" noStyle>
+          <Form.Item name="body">
             <Input placeholder="body" />
           </Form.Item>
         </Form.Item>

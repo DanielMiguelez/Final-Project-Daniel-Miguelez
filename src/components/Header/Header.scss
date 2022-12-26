@@ -1,15 +1,15 @@
 .header{
-    background-color: rgb(82, 74, 74);
+    background-color: #01012b;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    border-bottom: solid 3px gold;
+    -webkit-box-shadow: -1px -2px 25px 0 rgba(255, 255, 255, 0.46);
 
 a{
     all: unset;
-    color: white;
+    color: #e31c79;
     margin: 15px;
 
 &:hover{

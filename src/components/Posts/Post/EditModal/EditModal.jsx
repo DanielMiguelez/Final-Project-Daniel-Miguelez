@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import "./EditModal.scss";
 import { Button, Modal, Form, Input } from "antd";
-import { updatePost } from "../../../../features/posts/postSlice";
+import { updatePost } from "../../../../features/posts/postsSlice";
 import { useEffect } from "react";
 
 const EditModal = ({ visible, setVisible }) => {

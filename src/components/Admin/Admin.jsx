@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { getAllPosts } from '../../features/posts/postSlice'
+import { getAllPosts } from '../../features/posts/postsSlice'
 import PostAdmin from './PostAdmin/PostAdmin'
 import "./Admin.scss";
 

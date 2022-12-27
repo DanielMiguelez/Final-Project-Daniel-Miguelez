@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { deletePostById, getPostById } from "../../features/posts/postSlice";
+import { deletePostById, getPostById } from "../../features/posts/postsSlice";
 import {  Modal, Result } from "antd";
 import { useState } from "react";
 import "./PostDetail.scss";
+import { createComment } from "../../features/comments/commentsSlice";
 
 const PostDetail = () => {
   const { id } = useParams();
@@ -41,12 +42,15 @@ const PostDetail = () => {
     <div>
       {" "}
       Here you can see your lasts posts!
+      <div className="postdetailed">
       <p> {post.userId}</p>
       <p> {post.name}</p>
       <p> {post.body}</p>
+      </div>
       {user.user?._id === post.userId ? (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
+          <button onClick={() => createComment(id)}>Comment</button>
         </>
       ) : (
         ""

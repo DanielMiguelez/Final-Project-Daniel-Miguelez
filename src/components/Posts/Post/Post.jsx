@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { like, dislike, updatePost, getPostById } from "../../../features/posts/postSlice";
+import { like, dislike, updatePost, getPostById } from "../../../features/posts/postsSlice";
 import { Link } from "react-router-dom";
 import "./Post.scss";
 import { HeartFilled, HeartOutlined, EditOutlined } from "@ant-design/icons";

@@ -87,7 +87,7 @@ export const updatePost = createAsyncThunk("posts/updatePost/", async (post) => 
 });
 
 
-export const postSlice = createSlice({
+export const postsSlice = createSlice({
   name: "posts",
   initialState,
   reducers: {
@@ -155,5 +155,5 @@ export const postSlice = createSlice({
   },
 });
 
-export const { reset } = postSlice.actions;
-export default postSlice.reducer;
+export const { reset } = postsSlice.actions;
+export default postsSlice.reducer;

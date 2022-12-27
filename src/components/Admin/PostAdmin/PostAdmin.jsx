@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deletePostById, getAllPosts } from "../../../features/posts/postSlice";
+import { deletePostById, getAllPosts } from "../../../features/posts/postsSlice";
 import "./PostAdmin.scss";
 
 const PostAdmin = () => {

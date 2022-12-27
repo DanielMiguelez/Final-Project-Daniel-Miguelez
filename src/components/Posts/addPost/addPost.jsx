@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom";
-import { createPost } from "../../../features/posts/postSlice";
+import { createPost } from "../../../features/posts/postsSlice";
 import "./AddPost.scss";
 
 

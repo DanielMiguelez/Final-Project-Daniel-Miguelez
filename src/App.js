@@ -15,6 +15,8 @@ import Posts from "./components/Posts/Posts";
 import PrivateZone from "./guards/PrivateZone";
 import AdminZone from "./guards/AdminZone";
 import NotFound from "./components/NotFound/NotFound";
+import AddComment from "./components/PostDetail/AddComment/AddComment";
+
 
 
 
@@ -27,10 +29,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          
           <Route path="/profile" 
           element={<PrivateZone><Profile/></PrivateZone>} />
 
+          <Route path="/addComment" element={<AddComment />} />
           <Route path="/post/:id" element={<PostDetail />} />
           <Route path="/posts" element={<Posts/>} />
           <Route path="/createPost" element={<AddPost/>} />

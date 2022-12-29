@@ -50,7 +50,7 @@ const PostDetail = () => {
       {user.user?._id === post.userId ? (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
-          <button onClick={() => createComment(id)}>Comment</button>
+          <button onClick={() => createComment(post._id)}>Comment</button>
         </>
       ) : (
         ""

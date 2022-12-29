@@ -18,6 +18,7 @@ const AddComment = () => {
   };
 
   const onSubmit = (e) => {
+    e.preventdefault()
     dispatch(createComment(formData))
   };
 

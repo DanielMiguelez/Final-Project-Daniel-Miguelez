@@ -15,7 +15,8 @@ import Posts from "./components/Posts/Posts";
 import PrivateZone from "./guards/PrivateZone";
 import AdminZone from "./guards/AdminZone";
 import NotFound from "./components/NotFound/NotFound";
-import AddComment from "./components/PostDetail/AddComment/AddComment";
+import AddComment from "./components/Comments/AddComment/AddComment";
+
 
 
 

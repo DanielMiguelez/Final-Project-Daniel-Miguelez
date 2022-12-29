@@ -15,9 +15,9 @@ const Search = () => {
 
   
   return (
-    <div>Search
-      
-      <Posts/></div>
+    <div>
+      <Posts/>
+      </div>
   )
 }
 

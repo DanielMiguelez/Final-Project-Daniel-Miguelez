@@ -39,6 +39,7 @@ const Header = () => {
        {user?.user?.role === 'admin' ? <span><Link to="/admin"> <UserOutlined /> Admin</Link></span>:''}
       {user ? (
         <>
+         <Link to="/createPost"> <TeamOutlined /> Publish</Link>
         <Link to="/profile"> <TeamOutlined /> Profile</Link>
         <Link to="/" onClick={onLogout}><UsergroupDeleteOutlined /> Logout</Link>
         </>

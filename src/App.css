@@ -1,5 +1,9 @@
 .App {
   text-align: center;
-  background-color: rgb(116, 116, 205);
+  background-color: #01012b;
   min-height: 100vh;
+  background:url(../assets/pexels-adrien-olichon-2387793.jpg);
+  background-position: center;
+   background-size: cover;
+   background-attachment: contain;
 }

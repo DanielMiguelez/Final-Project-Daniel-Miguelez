@@ -1,7 +1,12 @@
 .footerdiv{
-    border-top: gold 3px solid;
+    border-top: rgb(0, 0, 0) 3px solid;
     display: flex;
-    background-color: rgb(216, 194, 194);
+    color: rgb(255, 213, 0);
+    font-size: large;
+    background:url(../../../assets/pexels-adrien-olichon-2387819.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: contain;
     height: 150px;
     width: 100%;
     align-self: flex-end;

@@ -39,9 +39,9 @@ const PostDetail = () => {
   }, []);
 
   return (
-    <div>
+    <div className="postdetaildiv">
       {" "}
-      Here you can see your lasts posts!
+      <h4>Here you can see your Post!</h4>
       <div className="postdetailed">
       <p> {post.userId}</p>
       <p> {post.name}</p>

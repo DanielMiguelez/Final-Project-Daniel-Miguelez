@@ -1,5 +1,8 @@
 .profilePadre{
-    background-color: #01012b;
+    background:url(../../../assets/pexels-adrien-olichon-2387819.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: contain;
     height: 85vh;
     display: flex;
     justify-content: center;
@@ -14,7 +17,7 @@
         justify-content: center;
         flex-direction: column;
         width: 20%;
-        margin: 20px;
+        margin: 80px;
     }
 
 

@@ -8,9 +8,10 @@
     transform: scale(1.05);}
 
 .postForm{
-    background-color: gray;
+    background-color: rgb(82, 51, 51);
     height: 180px;
     width: 25%;
+    padding: 60px;
     display: flex;
     justify-content: center;
     transition: transform 1s;

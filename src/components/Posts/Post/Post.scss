@@ -1,20 +1,7 @@
-.postpadre{
-    display: flex;
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
 .postdiv{
     border: 4px solid black;
-    margin: 3px;
-    width: 35%;
     background-color: rgb(87, 111, 198);
-    border-radius: 75px;
-    padding: 10px;
-}
-.likeButton{
-    background-color: green;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
 }

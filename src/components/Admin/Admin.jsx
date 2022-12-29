@@ -11,7 +11,8 @@ const Admin = () => {
     }, [])
     
   return (
-    <div className='adminDiv'>Only you, as Admin, can see this Page
+    <div>
+      <h4>Only you, as Admin, can see this Page</h4>
       <div className='postsCreated'>
         <PostAdmin/>
       </div>

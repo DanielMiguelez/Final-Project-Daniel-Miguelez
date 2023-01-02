@@ -1,12 +1,19 @@
-import React from 'react'
-import Posts from "../Posts/Posts"
+import React from "react";
+import CarouselHome from '../Carousel/Carousel'
+import Posts from "../Posts/Posts";
+
+
 
 const Home = () => {
   return (
-    <div>
-      <Posts/>
-    </div>
-  )
-}
+  
 
-export default Home
+      <div>
+        <CarouselHome/>
+        <Posts />
+      </div>
+  
+  );
+};
+
+export default Home;

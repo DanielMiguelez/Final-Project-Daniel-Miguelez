@@ -1,0 +1,36 @@
+.carousel{
+  margin: 15px;
+  opacity: .5;
+  cursor: pointer;
+ &:hover{
+  opacity: .7;
+ }
+}
+
+.ft1 {
+    background-image: url(../../../assets/pexels-kelly-2519380.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  
+  .ft2 {
+    background-image: url(../../../assets/pexels-mudassir-ali-1619854.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  
+  .ft3 {
+    background-image: url(../../../assets/pexels-pixabay-206353.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  
+  .ft4 {
+    background-image: url(../../../assets/pexels-pixabay-346286.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }

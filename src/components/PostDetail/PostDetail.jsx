@@ -47,6 +47,7 @@ const PostDetail = () => {
       <p> {post.name}</p>
       <p> {post.body}</p>
       </div>
+      
       {user.user?._id === post.userId ? (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>

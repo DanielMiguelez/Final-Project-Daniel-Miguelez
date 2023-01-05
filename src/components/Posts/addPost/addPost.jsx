@@ -15,9 +15,6 @@ const AddPost = () => {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
-
-
-  
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,

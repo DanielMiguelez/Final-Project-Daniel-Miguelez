@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+/*import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import "./EditModal.scss";
 import { Button, Modal, Form, Input } from "antd";
@@ -43,4 +43,4 @@ const EditModal = ({ visible, setVisible }) => {
   );
 };
 
-export default EditModal;
+export default EditModal;*/

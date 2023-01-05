@@ -5,7 +5,7 @@ import { deletePostById, getPostById } from "../../features/posts/postsSlice";
 import {  Modal, Result } from "antd";
 import { useState } from "react";
 import "./PostDetail.scss";
-import { createComment } from "../../features/comments/commentsSlice";
+import AddComment from "../Comments/AddComment/AddComment";
 
 const PostDetail = () => {
   const { id } = useParams();
@@ -13,10 +13,15 @@ const PostDetail = () => {
   const navigate = useNavigate();
   const { post } = useSelector((state) => state.posts);
   const { user } = useSelector((state) => state.auth);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen, ] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(false)
 
   const showModal = () => {
+    setOpen(true);
     setIsModalOpen(true);
+   
   };
   const handleOk = () => {
     setIsModalOpen(false);
@@ -47,11 +52,13 @@ const PostDetail = () => {
       <p> {post.name}</p>
       <p> {post.body}</p>
       </div>
-      
+
+      {visible? <AddComment/> : null}
+
       {user.user?._id === post.userId ? (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
-          <button onClick={() => createComment(post._id)}>Comment</button>
+          <button onClick={() => setVisible(post._id)}>Commentario</button>
         </>
       ) : (
         ""

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { like, dislike, updatePost, getPostById } from "../../../features/posts/postsSlice";
+import { like, dislike, getPostById } from "../../../features/posts/postsSlice";
 import { Link } from "react-router-dom";
 import "./Post.scss";
 import { HeartFilled, HeartOutlined, EditOutlined } from "@ant-design/icons";
@@ -13,7 +13,6 @@ const Post = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = (_id) => {
-
     dispatch(getPostById(_id));
     setIsModalVisible(true);
   };

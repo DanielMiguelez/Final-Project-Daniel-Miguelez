@@ -22,7 +22,7 @@ const AddComment = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(createComment(formData));
-
+    console.log(formData)
   };
 
   return (

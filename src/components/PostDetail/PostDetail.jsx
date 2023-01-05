@@ -55,7 +55,7 @@ const PostDetail = () => {
 
       {visible? <AddComment/> : null}
 
-      {user.user?._id === post.userId ? (
+      {user.user?._id === post.userId ?  (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
           <button onClick={() => setVisible(post._id)}>Commentario</button>

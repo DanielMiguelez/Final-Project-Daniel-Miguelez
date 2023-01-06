@@ -1,15 +1,14 @@
+.admindiv{
+    height: 100%;
+}
 .postsCreated{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 30px;
 }
 
 h4{
     font-size: 20px;
     color: white;
 }
-.admindiv{
-    height: 65vh;
-}
+

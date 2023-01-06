@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Card } from 'antd';
 import "./Profile.scss";
 
 const Profile = () => {
@@ -10,7 +11,9 @@ const Profile = () => {
   return (
     <div className="profilePadre">
       <div className="profilediv">
-          <h1>Profile</h1>
+        
+      <h1>Profile</h1>
+          
           <p>{user.user.name}</p>
           <p>{user.user.email}</p>
           <p>{user.user.age}</p>

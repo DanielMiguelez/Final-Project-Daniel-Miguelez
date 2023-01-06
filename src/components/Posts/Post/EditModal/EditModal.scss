@@ -1,9 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 .form-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
+    margin-left: 80px;
     input{
         width: 20vw;
+       
     }
 }

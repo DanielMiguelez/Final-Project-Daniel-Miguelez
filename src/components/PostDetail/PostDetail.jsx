@@ -44,11 +44,11 @@ const PostDetail = () => {
   }, []);
 
   return (
+    
     <div className="postdetaildiv">
       {" "}
       <h4>Here you can see your Post!</h4>
       <div className="postdetailed">
-      <p> {post.userId}</p>
       <p> {post.name}</p>
       <p> {post.body}</p>
       </div>

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 import { getPostByName } from '../../features/posts/postsSlice'
-import Post from '../Posts/Post/Post';
 import Posts from '../Posts/Posts';
+import "./Search.scss";
 
 const Search = () => {
   const {postName} = useParams( )
@@ -15,7 +15,7 @@ const Search = () => {
 
   
   return (
-    <div>
+    <div className='searchdiv'>
       <Posts/>
       </div>
   )

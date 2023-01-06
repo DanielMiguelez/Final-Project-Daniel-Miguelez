@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createComment } from "../../../features/comments/commentsSlice";
+import "./AddComment.scss"
 
 const AddComment = () => {
   const [loading, setLoading] = useState(false);
@@ -26,11 +27,11 @@ const AddComment = () => {
   };
 
   return (
-    <div>
-        <form >
+    <div className="formdiv">
+        <form className="formcomment" >
           <h4>Comment here</h4>
           <input type="text" name="body" value={body} onChange={onChange} />
-          <button onClick={onSubmit} type="submit">Commenta</button>
+          <button onClick={onSubmit} type="submit">Comment</button>
         </form>
     </div>
   );

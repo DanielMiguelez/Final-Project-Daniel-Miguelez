@@ -58,7 +58,7 @@ const PostDetail = () => {
       {user.user?._id === post.userId ?  (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
-          <button onClick={() => setVisible(post._id)}>Commentario</button>
+          <button onClick={() => setVisible(post._id)}>Comment</button>
         </>
       ) : (
         ""

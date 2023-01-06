@@ -10,7 +10,6 @@ const Profile = () => {
   return (
     <div className="profilePadre">
       <div className="profilediv">
-       
           <h1>Profile</h1>
           <p>{user.user.name}</p>
           <p>{user.user.email}</p>

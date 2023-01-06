@@ -27,8 +27,9 @@ const Post = () => {
       <div key={post._id} className="postdiv">
 
         <Link to={"/post/" + post._id}>
-          <p> Created by : {post.userId.name}</p> <p> Post Title {post.name}</p>{" "}
-          <p> {post.body}</p> <p>Likes: {post.likes.length}</p>
+          <p> Account : <br /> {post.userId.name}</p> 
+          <p> Title <br /> {post.name}</p>
+          <p> {post.body}</p> <p> <HeartFilled/> {post.likes.length}</p>
         </Link>
 
         {isAlreadyLiked ? (

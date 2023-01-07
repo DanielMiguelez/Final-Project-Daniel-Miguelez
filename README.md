@@ -74,11 +74,11 @@ This space is made to list my favourites Social Network projects that I have exp
 
 ### Project's review and GIFS
 
-![foto](/redux-project/assets/demo.gif)
+![foto](assets/demo.gif)
 
-![foto](/redux-project/assets/register.gif)
+![foto](assets/register.gif)
 
-![foto](/redux-project/assets/search.gif)
+![foto](assets/search.gif)
 
 ## Contact
 

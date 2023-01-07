@@ -1,46 +1,122 @@
-# Getting Started with Create React App and Redux
+# 3rd Project with ReacFinal Project - Social Networkt - MERN Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<h3 align="center">MERN STACK FRONTEND PROJECT</h3>
 
-## Available Scripts
+<p align="center">In this project, everything learned so far is unified. The student will develop a social network in which users will register, log in and publish using the social network API created in the 2nd Backend Project.</p>
 
-In the project directory, you can run:
+## Goals of this project
 
-### `npm start`
+### Development of an e-commerce using Front and Backend where we will put in practice how to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<objectives>
+  <ol>
+    <li>Register Users</li>
+    <li>Log in users</a></li>
+    <li>View Posts and create new ones</li>
+    <li>Delete and Edit posts from the author</a></li>
+    <li>Like or remove like from a post</a></li>
+    <li>Search bar for users or posts</a></li>
+    <li>Availability to see your posts and data</a></li>
+    <li>Comment every post</a></li>
+  </ol>
+</objectives>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Essential project requirements:
 
-### `npm test`
+● Use of branches with git, when the project is finished there should be two branches, the master or main and the develop.
+● Excellent README presentation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Views
 
-### `npm run build`
+<p>At least it has to be done with the next components, these are the ones to be done throughout the project:</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<views>
+  <ol>
+    <li>Home</a></li>
+    <li>Header</a></li>
+    <li>Footer</a></li>
+    <li>Login / Logout</a></li>
+    <li>Register</a></li>
+    <li>Profile</a></li>
+    <li>Search</a></li>
+    <li>Admin</a></li>
+    <li>Post Admin</a></li>
+    <li>Comments</a></li>
+    <li>Post Detail</a></li>
+    <li>Not Found</a></li>
+  </ol>
+    ● Use Redux
+    ● Use SASS
+    ● Design is important.
+</views>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [![Node][node.js]][node.js-url]
+- [![React][react]][react-url]
+- [![SASS][sass]][sass-url]
 
-### `npm run eject`
+### Future Roadmap
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [x] Improve the styles with SASS
+- [ ] Add more products to the listing
+- [ ] Put in practice the remaining Extra exercises
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is under license of Daniel Miguélez.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
 
-## Learn More
+This space is made to list my favourites Social Network projects that I have explored and inspired by while doing our app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- https://github.com/miguelherreravillanueva/Proyecto-React.SocialNetwork
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Project's review and GIFS
+
+![foto](/redux-project/assets/demo.gif)
+
+![foto](/redux-project/assets/register.gif)
+
+![foto](/redux-project/assets/search.gif)
+
+## Contact
+
+<p align="center">
+Daniel Miguelez
+<a href = "mailto:danielmiguelez1993@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://github.com/DanielMiguelez" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</p>
+
+---
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/sergiocano-dev
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[JWT]: https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
+[JWT-url]: https://jwt.io/
+[Vercel]: https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com/
+[MongoDB]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/es
+[Express.js]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
+[Express.js-url]: https://expressjs.com/
+[Node.JS]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[Node.JS-url]: https://nodejs.org/en/
+[SASS]: https://img.shields.io/badge/SASS-pink?style=for-the-badge&logo=SASS&logoColor=white
+[SASS-url]: https://sass-lang.com/
+[React]: https://img.shields.io/badge/React-219ebc?style=for-the-badge&logo=React&typoColor=fedcba&logoColor=white
+[React-url]: https://es.reactjs.org/
+[Postman]: https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white
+[Postman-url]: https://www.postman.com/

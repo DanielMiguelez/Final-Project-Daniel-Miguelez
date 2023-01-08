@@ -7,9 +7,9 @@ const initialState = {
 
 export const createComment = createAsyncThunk(
     "comments/createComment",
-    async (_id) => {
+    async (formData) => {
       try {
-        return await commentsService.createComment(_id);
+        return await commentsService.createComment(formData);
       } catch (error) {
         console.error(error);
       }

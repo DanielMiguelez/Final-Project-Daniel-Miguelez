@@ -14,7 +14,7 @@ const AddPost = () => {
 
   const { name, body } = formData;
   const dispatch = useDispatch()
-  const { isSuccess, message, isError } = useSelector((state) => state.auth);
+  const { isSuccess, message, isError } = useSelector((state) => state.posts);
   const navigate = useNavigate()
 
   useEffect(() => {

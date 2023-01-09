@@ -28,7 +28,7 @@ const AddPost = () => {
     notification.success({message: "Success", description: "post creado con exito",});
       setTimeout(() => {
         navigate("/");
-      }, 1000);
+      }, 2000);
   };
 
   return (

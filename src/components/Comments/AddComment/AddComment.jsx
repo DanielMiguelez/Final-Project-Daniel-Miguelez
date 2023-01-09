@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
 import { createComment } from "../../../features/comments/commentsSlice";
 import { getPostById } from "../../../features/posts/postsSlice";
 import "./AddComment.scss";

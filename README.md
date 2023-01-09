@@ -1,8 +1,8 @@
-# 3rd Project with ReacFinal Project - Social Networkt - MERN Stack
+# 3rd Project with React Final Project - Social Network - MERN Stack
 
 <h3 align="center">MERN STACK FRONTEND PROJECT</h3>
 
-<p align="center">In this project, everything learned so far is unified. The student will develop a social network in which users will register, log in and publish using the social network API created in the 2nd Backend Project.</p>
+<p align="center">In this project, everything learned so far is unified. I developed a social network in which users will register, log in and publish using the social network API created in the 2nd Backend Project.</p>
 
 ## Goals of this project
 
@@ -59,7 +59,7 @@
 ### Future Roadmap
 
 - [x] Improve the styles with SASS
-- [ ] Add more products to the listing
+- [ ] Add more posts and variety to the listing
 - [ ] Put in practice the remaining Extra exercises
 
 ## License
@@ -71,6 +71,7 @@ This project is under license of Daniel Miguélez.
 This space is made to list my favourites Social Network projects that I have explored and inspired by while doing our app.
 
 - https://github.com/miguelherreravillanueva/Proyecto-React.SocialNetwork
+- https://github.com/msalvatore82/Red-Social1.0
 
 ### Project's review and GIFS
 

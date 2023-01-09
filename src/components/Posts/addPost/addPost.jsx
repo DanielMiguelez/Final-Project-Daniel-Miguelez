@@ -14,24 +14,9 @@ const AddPost = () => {
 
   const { name, body } = formData;
   const dispatch = useDispatch()
-  const { isSuccess, message, isError } = useSelector((state) => state.posts);
   const navigate = useNavigate()
 
-  useEffect(() => {
-    if (isSuccess) {
-      notification.success({message: "Success", description: message,});
-      setTimeout(() => {
-        navigate("/posts");
-      }, 1000);
-    }
-    if (isError) {
-      notification.error({
-        message: "There was an error publishing",
-        description: message,
-      });
-    }
-    dispatch(reset())
-  }, [isSuccess, isError, message]);
+  
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -41,7 +26,12 @@ const AddPost = () => {
   };
 
   const onSubmit = (e) => {
+    e.preventDefault()
     dispatch(createPost(formData))
+    notification.success({message: "Success", description: "post creado con exito",});
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
   };
 
   return (

@@ -22,14 +22,17 @@ const Post = () => {
   }
 
   const post = posts?.map((post) => {
-    const isAlreadyLiked = post.likes?.includes(user?.user._id);
+    const isAlreadyLiked = post?.likes?.includes(user?.user._id);
+    if(!post){
+      return <h1>cargando post..</h1>
+    }
     return (
       <div key={post._id} className="postdiv">
 
         <Link to={"/post/" + post._id}>
           <p> Account : <br /> {post.userId.name}</p> 
           <p> Title <br /> {post.name}</p>
-          <p> {post.body}</p> <p> <HeartFilled/> {post.likes.length}</p>
+          <p> {post.body}</p> <p> <HeartFilled/> {post?.likes?.length}</p>
         </Link>
 
         {isAlreadyLiked ? (

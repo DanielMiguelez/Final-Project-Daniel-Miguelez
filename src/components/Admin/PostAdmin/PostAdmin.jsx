@@ -18,6 +18,8 @@ const PostAdmin = () => {
         <img src={images} width={300} height={150} />
         <p>{post.name}</p>
         <p>{post.body}</p>
+        {post.commentIds?.map(comment=> <p>Anonimo: <br />
+      {comment.comment}</p>)}
         <button onClick={()=>deletePost(post._id)}>Delete </button>
       </div>
     );

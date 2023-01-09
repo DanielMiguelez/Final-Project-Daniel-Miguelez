@@ -6,7 +6,7 @@ import "./PostAdmin.scss";
 const PostAdmin = () => {
   const { posts } = useSelector((state) => state.posts);
   const dispatch = useDispatch();
-
+  const images = "https://c4.wallpaperflare.com/wallpaper/671/25/110/australia-paisaje-pueblo-wallpaper-preview.jpg"
   const deletePost = async (id) => {
    await dispatch(deletePostById(id));
    dispatch(getAllPosts())
@@ -15,6 +15,7 @@ const PostAdmin = () => {
   const post = posts.map((post) => {
     return (
       <div className="PostAdminDiv">
+        <img src={images} width={300} height={150} />
         <p>{post.name}</p>
         <p>{post.body}</p>
         <button onClick={()=>deletePost(post._id)}>Delete </button>

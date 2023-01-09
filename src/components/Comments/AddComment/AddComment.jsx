@@ -2,22 +2,20 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { createComment } from "../../../features/comments/commentsSlice";
-import "./AddComment.scss"
+import { getPostById } from "../../../features/posts/postsSlice";
+import "./AddComment.scss";
 
-const AddComment = () => {
-  const {_id} = useParams()
-  const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
+const AddComment = (props) => {
   const [formData, setFormData] = useState({
     comment: "",
-    postIds:_id
+    postIds: props._id,
   });
-  const { comment, postIds  } = formData;
+  const { comment } = formData;
 
   const clearState = () => {
     setFormData({
       comment: "",
-      postIds:""
+      postIds: "",
     });
   };
 
@@ -33,17 +31,21 @@ const AddComment = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(createComment(formData));
-    console.log(formData)
-    clearState()
+    setTimeout(() => {
+      dispatch(getPostById(props._id));
+    }, 1000);
+    clearState();
   };
 
   return (
     <div className="formdiv">
-        <form className="formcomment" >
-          <h4>Comment here</h4>
-          <input type="text" name="comment" value={comment} onChange={onChange} />
-          <button onClick={onSubmit} type="submit">Comment</button>
-        </form>
+      <form className="formcomment">
+        <h4>Comment here</h4>
+        <input type="text" name="comment" value={comment} onChange={onChange} />
+        <button onClick={onSubmit} type="submit">
+          Comment
+        </button>
+      </form>
     </div>
   );
 };

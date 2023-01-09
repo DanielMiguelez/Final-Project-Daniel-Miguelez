@@ -11,6 +11,8 @@ const Post = () => {
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const [isModalVisible, setIsModalVisible] = useState(false);
+ 
+  const images = "https://c4.wallpaperflare.com/wallpaper/671/25/110/australia-paisaje-pueblo-wallpaper-preview.jpg"
 
   const showModal = (_id) => {
     dispatch(getPostById(_id));
@@ -28,10 +30,10 @@ const Post = () => {
     }
     return (
       <div key={post._id} className="postdiv">
-
+        <img src={images} width={400} height={200} />
         <Link to={"/post/" + post._id}>
-          <p> Account : <br /> {post.userId.name}</p> 
-          <p> Title <br /> {post.name}</p>
+          <p> <br /> {post.userId.name}</p> 
+          <p> <br /> {post.name}</p>
           <p> {post.body}</p> <p> <HeartFilled/> {post?.likes?.length}</p>
         </Link>
 

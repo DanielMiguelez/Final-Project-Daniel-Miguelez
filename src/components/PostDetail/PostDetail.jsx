@@ -16,6 +16,7 @@ const PostDetail = () => {
   const [isModalOpen, setIsModalOpen, ] = useState(false);
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false)
+  const images = "https://c4.wallpaperflare.com/wallpaper/671/25/110/australia-paisaje-pueblo-wallpaper-preview.jpg"
 
   const showModal = () => {
     setOpen(true);
@@ -43,14 +44,18 @@ const PostDetail = () => {
 
   return (
     <div className="postdetaildiv">
+      
       {" "}
       <h4>Here you can see your Post!</h4>
       <div className="postdetailed">
+      <img src={images} width={400} height={200} />
       <p> {post.name}</p>
       <p> {post.body}</p>
+      {post.commentIds?.map(comment=> <p>Comments: <br />
+      {comment.comment}</p>)}
       </div>
 
-      {visible? <AddComment/> : null}
+      {visible? <AddComment _id={id}/> : null}
 
       {user.user?._id === post.userId ?  (
         <>

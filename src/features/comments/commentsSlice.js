@@ -26,13 +26,6 @@ export const createComment = createAsyncThunk(
       },
     },
 
-    extraReducers: (builder) => {
-        builder
-          .addCase(createComment.fulfilled, (state, action) => {
-            state.comments = [action.payload.comment, ...state.comments];
-          })
-    
-      },
     });
     
     export const { reset } = commentsSlice.actions;

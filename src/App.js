@@ -10,7 +10,7 @@ import PostDetail from "./components/PostDetail/PostDetail";
 import Search from "./components/Search/Search";
 import Footer from "./components/Footer/Footer";
 import Admin from "./components/Admin/Admin";
-import AddPost from "./components/AddPost/AddPost";
+import AddPost from "./components/Posts/AddPost/AddPost";
 import Posts from "./components/Posts/Posts";
 import PrivateZone from "./guards/PrivateZone";
 import AdminZone from "./guards/AdminZone";

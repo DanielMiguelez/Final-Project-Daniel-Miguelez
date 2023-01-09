@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { createPost } from "../../../features/posts/postsSlice";
 import { notification } from "antd";
 import "./AddPost.scss";
-import { reset } from "../../../features/auth/authSlice";
 
 const AddPost = () => {
   const [formData, setFormData] = useState({
@@ -15,8 +14,6 @@ const AddPost = () => {
   const { name, body } = formData;
   const dispatch = useDispatch()
   const navigate = useNavigate()
-
-  
 
   const onChange = (e) => {
     setFormData((prevState) => ({

@@ -16,12 +16,10 @@ const PostDetail = () => {
   const [isModalOpen, setIsModalOpen, ] = useState(false);
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false)
-  const [isModalVisible, setIsModalVisible] = useState(false)
 
   const showModal = () => {
     setOpen(true);
     setIsModalOpen(true);
-   
   };
   const handleOk = () => {
     setIsModalOpen(false);
@@ -44,7 +42,6 @@ const PostDetail = () => {
   }, []);
 
   return (
-    
     <div className="postdetaildiv">
       {" "}
       <h4>Here you can see your Post!</h4>
@@ -63,7 +60,7 @@ const PostDetail = () => {
       ) : (
         ""
       )}
-      <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} >
         <Result
           status="success"
           title="Enhorabuena, tu post ha sido eliminado."

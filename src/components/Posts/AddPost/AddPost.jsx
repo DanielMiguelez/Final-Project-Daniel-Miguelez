@@ -25,7 +25,7 @@ const AddPost = () => {
   const onSubmit = (e) => {
     e.preventDefault()
     dispatch(createPost(formData))
-    notification.success({message: "Success", description: "post creado con exito",});
+    notification.success({message: "Success", description: "post created successfully",});
       setTimeout(() => {
         navigate("/");
       }, 2000);

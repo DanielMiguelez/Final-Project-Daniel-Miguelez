@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <span><Link to="/"><HomeOutlined /> Home</Link></span>
+      <span><Link to="/"><HomeOutlined /> DANIELGRAM </Link></span>
        <input onKeyUp={handleChange} placeholder="search post" name='text'/>
        {user?.user?.role === 'admin' ? <span><Link to="/admin"> <UserOutlined /> Admin</Link></span>:''}
       {user ? (

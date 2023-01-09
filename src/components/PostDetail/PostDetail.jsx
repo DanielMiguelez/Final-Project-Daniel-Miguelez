@@ -57,7 +57,7 @@ const PostDetail = () => {
 
       {visible? <AddComment _id={id}/> : null}
 
-      {user.user?._id === post.userId ?  (
+      {user.user?._id === post.userId ?   (
         <>
           <button onClick={() => deletePost(post._id)}>Delete post</button>
           <button onClick={() => setVisible(post._id)}>Comment</button>
@@ -65,10 +65,11 @@ const PostDetail = () => {
       ) : (
         ""
       )}
+      
       <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} >
         <Result
           status="success"
-          title="Enhorabuena, tu post ha sido eliminado."
+          title="Congratulations, your post was deleted."
         />
       </Modal>
     </div>

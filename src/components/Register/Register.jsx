@@ -12,7 +12,7 @@ const Register = () => {
     password: "",
     password2: "",
     age: 0,
-  });
+  }); 
 
   const { name, email, password, password2, age } = formData;
   const dispatch = useDispatch();

@@ -9,7 +9,6 @@ import {
   UsergroupDeleteOutlined,
   UserAddOutlined,
   UserOutlined,
-  ShoppingCartOutlined,
 } from "@ant-design/icons";
 
 const Header = () => {
